@@ -6,18 +6,28 @@ public class ArrayQuestion {
     public static void main(String[] args) {
 
         //1 find the min in array
-        int arr[] = {3, 2, -5, 21, 10};
-        int n = arr.length;
+//        int arr[] = {3, 2, -5, 21, 10};
+//        int n = arr.length;
+//
+//        int minvalue = arr[0];
+//
+//        for (int i = 0; i < n - 1; i++) {
+//            if (arr[i] < minvalue) {
+//                minvalue = arr[i];
+//            }
+//        }
+//        System.out.println(minvalue);
 
-        int minvalue = arr[0];
-
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[i] < minvalue) {
-                minvalue = arr[i];
-            }
-        }
-        System.out.println(minvalue);
-
+//        int arr[]={4,3,6,7,-9,-4,10};
+//        int n = arr.length;
+//
+//        int minv=arr[0];
+//        for(int i=0;i<n-1;i++){
+//            if (arr[i]< minv){
+//                minv =arr[i];
+//            }
+//        }
+//        System.out.println(minv);
 
         //max value
 //        int arr[]={3,2,-5,21,10};
@@ -30,6 +40,18 @@ public class ArrayQuestion {
 //            }
 //        }
 //        System.out.println(maxvalue);
+        int arr[]={2,35,6,86,00023};
+        int n= arr.length;
+        int maxvaluve=arr[0];
+
+        for (int i=0;i<=n-1;i++){
+            if(arr[i] > maxvaluve){
+                maxvaluve=arr[i];
+            }
+        }
+        System.out.println(maxvaluve);
+
+
 
         //printing the all number to multiple
 //        int arr[]={2,3,10,20};
