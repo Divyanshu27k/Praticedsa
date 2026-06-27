@@ -50,15 +50,15 @@ public class ArrayQuestion {
 //            }
 //        }
 //        System.out.println(maxvaluve);
-         int arr[]={23,56,56,34,24,23};
-         int n=arr.length;
-         int max=arr[0];
-         for (int i=0;i<=n-1;i++){
-             if(arr[i] > max){
-                 max=arr[i];
-             }
-         }
-        System.out.println(max);
+//         int arr[]={23,56,56,34,24,23};
+//         int n=arr.length;
+//         int max=arr[0];
+//         for (int i=0;i<=n-1;i++){
+//             if(arr[i] > max){
+//                 max=arr[i];
+//             }
+//         }
+//        System.out.println(max);
 
 
 
@@ -109,6 +109,18 @@ public class ArrayQuestion {
 //            System.out.println(val);
 //
 //        }
+//        int arr[] =new int[11];
+//        Scanner sc=new Scanner(System.in);
+//        int n= arr.length;
+//        for(int i=0;i<=n-1;i++){
+//            System.out.println("Give me your number : " + i);
+//            arr[i]= sc.nextInt();
+//
+//        }
+//        //printing the no.
+//        for(int val : arr){
+//            System.out.println(val);
+//        }
 
 
         //        int arr[];
@@ -126,5 +138,16 @@ public class ArrayQuestion {
 //        System.out.println("value of 1 index :" + brr[1]);
 //        System.out.println("value of 2 index :" + brr[2]);
 
+        //multiple by 2D array
+        int arr[] []={{1,2,3},{4,6,7}};
+        int sum=0;
+        int ans=1;
+        for(int i=0;i<arr.length;i++){
+            for (int j =0;j<arr[i].length;j++){
+                int val=arr[i][j];
+                ans=ans*val;
+            }
+            System.out.println(ans);
+        }
     }
 }
