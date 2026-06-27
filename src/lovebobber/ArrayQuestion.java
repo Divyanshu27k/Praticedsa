@@ -40,16 +40,25 @@ public class ArrayQuestion {
 //            }
 //        }
 //        System.out.println(maxvalue);
-        int arr[]={2,35,6,86,00023};
-        int n= arr.length;
-        int maxvaluve=arr[0];
-
-        for (int i=0;i<=n-1;i++){
-            if(arr[i] > maxvaluve){
-                maxvaluve=arr[i];
-            }
-        }
-        System.out.println(maxvaluve);
+//        int arr[]={2,35,6,86,00023};
+//        int n= arr.length;
+//        int maxvaluve=arr[0];
+//
+//        for (int i=0;i<=n-1;i++){
+//            if(arr[i] > maxvaluve){
+//                maxvaluve=arr[i];
+//            }
+//        }
+//        System.out.println(maxvaluve);
+         int arr[]={23,56,56,34,24,23};
+         int n=arr.length;
+         int max=arr[0];
+         for (int i=0;i<=n-1;i++){
+             if(arr[i] > max){
+                 max=arr[i];
+             }
+         }
+        System.out.println(max);
 
 
 
