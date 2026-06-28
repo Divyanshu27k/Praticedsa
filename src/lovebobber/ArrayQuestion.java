@@ -139,15 +139,27 @@ public class ArrayQuestion {
 //        System.out.println("value of 2 index :" + brr[2]);
 
         //multiple by 2D array
+//        int arr[] []={{1,2,3},{4,6,7}};
+//        int sum=0;
+//        int ans=1;
+//        for(int i=0;i<arr.length;i++){
+//            for (int j =0;j<arr[i].length;j++){
+//                int val=arr[i][j];
+//                ans=ans*val;
+//            }
+//            System.out.println(ans);
+//        }
+        //2D array mai max value how to find
         int arr[] []={{1,2,3},{4,6,7}};
-        int sum=0;
-        int ans=1;
+        int maxValue=arr[0][0];
+
         for(int i=0;i<arr.length;i++){
-            for (int j =0;j<arr[i].length;j++){
-                int val=arr[i][j];
-                ans=ans*val;
+            for(int j=0;j< arr[i].length;j++){
+                if (arr[i][j] > maxValue){
+                    maxValue =arr[i][j];
+                }
             }
-            System.out.println(ans);
         }
+        System.out.println(maxValue);
     }
 }
