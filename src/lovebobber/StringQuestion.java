@@ -175,6 +175,8 @@ public class StringQuestion {
         String str = "Noon";
         System.out.println(isPalindrome(str));
 
+        //some more question coming soon
+
     }
 
 }
