@@ -33,6 +33,19 @@ public class MathQuestion {
 //        sc.close();
 
         //multiple
+//        Scanner sc=new Scanner(System.in);
+//
+//        System.out.println("Enter the first number : ");
+//        int a=sc.nextInt();
+//
+//        System.out.println("Enter the Second nnumber : ");
+//        int b=sc.nextInt();
+//
+//        System.out.println("Sum = " +(a*b));
+//        sc.close();
+
+
+        //some calucation
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Enter the first number : ");
@@ -41,8 +54,7 @@ public class MathQuestion {
         System.out.println("Enter the Second nnumber : ");
         int b=sc.nextInt();
 
-        System.out.println("Sum = " +(a*b));
+        System.out.println("Sum = " +(a+b)/100*(a+b)*2);
         sc.close();
-
     }
 }
