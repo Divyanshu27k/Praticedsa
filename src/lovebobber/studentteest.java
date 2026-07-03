@@ -40,11 +40,11 @@ public class studentteest {
 
         //copy const
 
-        OopsOperation op2 = new OopsOperation(op);
+      //  OopsOperation op2 = new OopsOperation(op);
 
-        System.out.println(op2.student_name);
-        System.out.println(op2.age);
-        System.out.println(op2.school_name);
+//        System.out.println(op2.student_name);
+//        System.out.println(op2.age);
+//        System.out.println(op2.school_name);
 
     }
 }

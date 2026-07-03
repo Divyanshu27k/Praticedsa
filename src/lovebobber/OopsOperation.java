@@ -31,16 +31,16 @@ public class OopsOperation {
     }
 
     //copy con
-    public OopsOperation(studentteest src) {
-        this.id = src.id;
-        this.student_name = src.student_name;
-        this.classs = src.classs;
-        this.roll_number = src.roll_number;
-        this.father_name = src.father_name;
-        this.address = src.address;
-        this.mobile_number = src.mobile_number;
-        this.school_name = src.school_name;
-    }
+//    public OopsOperation(studentteest src) {
+//        this.id = src.id;
+//        this.student_name = src.student_name;
+//        this.classs = src.classs;
+//        this.roll_number = src.roll_number;
+//        this.father_name = src.father_name;
+//        this.address = src.address;
+//        this.mobile_number = src.mobile_number;
+//        this.school_name = src.school_name;
+//    }
     //Method/ behaviour
 
     public void study(){
