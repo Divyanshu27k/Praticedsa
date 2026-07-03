@@ -22,7 +22,7 @@ public class EncapsuleCodeP {
     }
 
     String adress;
-    String mobilenumber
+    String mobilenumber;
 
     public int getId() {
         return id;
