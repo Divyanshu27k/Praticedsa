@@ -5,6 +5,25 @@ public class EncapsuleCodeP {
     String name;
     String college_name;
 
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public String getMobilenumber() {
+        return mobilenumber;
+    }
+
+    public void setMobilenumber(String mobilenumber) {
+        this.mobilenumber = mobilenumber;
+    }
+
+    String adress;
+    String mobilenumber
+
     public int getId() {
         return id;
     }
