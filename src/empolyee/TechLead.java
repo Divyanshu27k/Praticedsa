@@ -1,10 +1,13 @@
 package empolyee;
 
-public class TechLead {
+public class TechLead extends Employee {
 
-    //displayinfo
-    public void displayinfo(){
-        System.out.println("displayinfo the goven information");
+    public TechLead(String name, int employeeId) {
+        super(name, employeeId);
+    }
+
+    public void displayInfo() {
+        display();
     }
 
 }

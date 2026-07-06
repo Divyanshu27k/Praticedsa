@@ -1,8 +1,11 @@
 package empolyee;
 
-public class HRManager {
-    //handleHRDuties()
-    public void handleHRDuties(){
-        System.out.println("handleHRDuties there is 5 Hr team and one is HeadHr also 4 are junior");
+public class HRManager extends Employee {
+    public HRManager(String name, int employeeId) {
+        super(name, employeeId);
+    }
+
+    public void handleHRDuties() {
+        System.out.println(name + " is handling HR duties.");
     }
 }

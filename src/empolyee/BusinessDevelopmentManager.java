@@ -1,9 +1,12 @@
 package empolyee;
 
-public class BusinessDevelopmentManager {
+public class BusinessDevelopmentManager extends Employee {
 
-    //coordinateBusinessDev()
-    public void coordinateBusinessDev(){
-        System.out.println("coordinateBusinessDeveloper. There are 5 Memeber of these Role.");
+    public BusinessDevelopmentManager(String name, int employeeId) {
+        super(name, employeeId);
+    }
+
+    public void coordinateBusinessDev() {
+        System.out.println(name + " is coordinating business development.");
     }
 }
