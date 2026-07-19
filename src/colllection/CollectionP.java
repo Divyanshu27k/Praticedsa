@@ -14,6 +14,10 @@ public class CollectionP {
         list.add(83);
         list.add(13);
         list.add(23);
+        list.add(12);
+        list.add(83);
+        list.add(13);
+        list.add(23);
 //        List<Integer> list=new ArrayList<>();
 //        Collection<Integer> col=new ArrayList<>();
 
