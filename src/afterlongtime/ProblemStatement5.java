@@ -35,7 +35,7 @@ Explanation of Sample Input 3:
 
 import java.util.Scanner;
 
-public class ProblemStatment5 {
+public class ProblemStatement5 {
 
     public static void main(String args[]) {
 

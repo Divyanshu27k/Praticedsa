@@ -25,7 +25,7 @@ Sample Output 3 :
 Explanation of Sample Input 2:
 5 is the highest of amongst all.
 */
-public class ProblemStatment7 {
+public class ProblemStatement7 {
     public static void main(String args[]) {
 
         // Write code here

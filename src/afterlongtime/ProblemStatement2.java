@@ -38,8 +38,8 @@ package afterlongtime;
 //-10^5 <= 'a', 'b' <= 10 ^ 5
 //
 //Time Limit: 1 sec
-import java.util.*;
-public class ProblemStatment2 {
+
+public class ProblemStatement2 {
     public static void swapNumber(int []a, int []b) {
         int temp = a[0];
         a[0] = b[0];

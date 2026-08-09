@@ -33,7 +33,7 @@ Sample Output 3 :
 2nd Quadrant
 Explanation of Sample Input 3:
 Since x is negative and y is positive the point lies in 2nd Quadrant.*/
-public class ProblemStatment8 {
+public class ProblemStatement8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

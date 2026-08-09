@@ -11,7 +11,7 @@ import java.util.*;
 //The name of the person is Ali and the age is 30.
 //Explanation of Sample Input 1:
 //The input name is Ali and the input age is 30 which is printed in the specified format.
-public class ProblemStatment1 {
+public class ProblemStatement1 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         String name=sc.nextLine();
