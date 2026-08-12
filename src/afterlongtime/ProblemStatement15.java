@@ -13,7 +13,6 @@ public class ProblemStatement15 {
 
                 n = n / 2;
             }
-
             return count;
 
     }
