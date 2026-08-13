@@ -10,11 +10,15 @@ public class DuplicateCharacters {
         for (char ch: str.toCharArray()){
             map.put(ch, map.getOrDefault(ch,0)+1);
         }
-        for(Map.Entry<Character, Integer>entry: map.entrySet()){
-
+//        for(Map.Entry<Character, Integer>entry: map.entrySet()){
+//
+//            if(entry.getValue()>1){
+//                System.out.println(entry.getKey());
+//
+//            }
+        for (Map.Entry<Character,Integer>entry: map.entrySet()){
             if(entry.getValue()>1){
                 System.out.println(entry.getKey());
-
             }
         }
     }
