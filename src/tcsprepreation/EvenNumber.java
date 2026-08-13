@@ -11,6 +11,6 @@ public class EvenNumber {
 //                .filter(n->n%2==0)
 //                .forEach(System.out::println);
         List<Integer> numbers= Arrays.asList(14,4,5,6,9,8,7,2,3,12);
-        numbers.stream().filter(n->n%3==0).forEach(System.out::println);
+        numbers.stream().filter(n->n%2==0).forEach(System.out::println);
     }
 }
