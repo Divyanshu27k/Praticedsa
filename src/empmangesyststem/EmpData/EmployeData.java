@@ -2,19 +2,19 @@ package empmangesyststem.EmpData;
 
 public class EmployeData {
 
-    public EmployeData(int id, String name,String addresh,long mobilenumber, String deparment, double salary) {
+    public EmployeData(int id, String name, String deparment, double salary) {
         this.id = id;
         this.name = name;
-        this.addresh=addresh;
-        this.mobilenumber=mobilenumber;
+     //   this.addresh=addresh;
+     //   this.mobilenumber=mobilenumber;
         this.deparment = deparment;
         this.salary = salary;
     }
 
     private int id;
     private String name;
-    private String addresh;
-    private long mobilenumber;
+   // private String addresh;
+   // private int mobilenumber;
     private String deparment;
     private double salary;
 
@@ -34,21 +34,21 @@ public class EmployeData {
         this.name = name;
     }
 
-    public String getAddresh() {
-        return addresh;
-    }
-
-    public void setAddresh(String addresh) {
-        this.addresh = addresh;
-    }
-
-    public long getMobilenumber() {
-        return mobilenumber;
-    }
-
-    public void setMobilenumber(long mobilenumber) {
-        this.mobilenumber = mobilenumber;
-    }
+//    public String getAddresh() {
+//        return addresh;
+//    }
+//
+//    public void setAddresh(String addresh) {
+//        this.addresh = addresh;
+//    }
+//
+//    public int getMobilenumber() {
+//        return mobilenumber;
+//    }
+//
+//    public void setMobilenumber(int mobilenumber) {
+//        this.mobilenumber = mobilenumber;
+//    }
 
     public String getDeparment() {
         return deparment;
@@ -71,8 +71,8 @@ public class EmployeData {
         return "EmployeData{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ",addresh='"+addresh+'\''+
-                ",mobilenumber='"+mobilenumber+'\''+
+               // ",addresh='"+addresh+'\''+
+               // ",mobilenumber='"+mobilenumber+'\''+
                 ", deparment='" + deparment + '\'' +
                 ", salary=" + salary +
                 '}';
