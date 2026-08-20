@@ -4,6 +4,7 @@ import empmangesyststem.EmpData.EmployeData;
 import empmangesyststem.EmployeeNotFoundException;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class EmployeService {
@@ -41,7 +42,7 @@ public class EmployeService {
         return  new ArrayList<>(emp);
     }
 
-    //update salary
+    //4.update salary
     public void updateSalary(int id,double newSalary){
         if (newSalary <0){
             throw new IllegalArgumentException(
@@ -58,7 +59,33 @@ public class EmployeService {
         emp.remove(employee);
         System.out.println("Employee deleted successfully.");
     }
-    //6.
+    //6.Find the highest salary
+    public EmployeData findHighestSalary() {
+        return emp.stream()
+                .max(Comparator.comparingDouble(EmployeData::getSalary))
+                .orElseThrow(() ->
+                        new EmployeeNotFoundException(
+                                "No employees available"
+                        )
+                );
+    }
+    // 7. Find Second-Highest Salary
+    public EmployeData findSecondHighestSalary() {
+
+        return emp.stream()
+                .sorted(
+                        Comparator.comparingDouble(EmployeData::getSalary)
+                                .reversed()
+                )
+                .distinct()
+                .skip(1)
+                .findFirst()
+                .orElseThrow(() ->
+                        new EmployeeNotFoundException(
+                                "Second highest salary not available"
+                        )
+                );
+    }
 
 
 

@@ -28,6 +28,10 @@ public class Main {
 
         //Find Highest
         System.out.println("\nEmployee with salary:");
-        //System.out.println(service.);
+        System.out.println(service.findHighestSalary());
+
+        //Find second-highest salary
+        System.out.println("\nEmployee with second-highest salary");
+        System.out.println(service.findSecondHighestSalary());
     }
 }
