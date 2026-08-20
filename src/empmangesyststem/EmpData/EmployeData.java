@@ -5,16 +5,16 @@ public class EmployeData {
     public EmployeData(int id, String name, String deparment, double salary) {
         this.id = id;
         this.name = name;
-     //   this.addresh=addresh;
-     //   this.mobilenumber=mobilenumber;
+        //   this.addresh=addresh;
+        //   this.mobilenumber=mobilenumber;
         this.deparment = deparment;
         this.salary = salary;
     }
 
     private int id;
     private String name;
-   // private String addresh;
-   // private int mobilenumber;
+    // private String addresh;
+    // private int mobilenumber;
     private String deparment;
     private double salary;
 
@@ -71,8 +71,8 @@ public class EmployeData {
         return "EmployeData{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-               // ",addresh='"+addresh+'\''+
-               // ",mobilenumber='"+mobilenumber+'\''+
+                // ",addresh='"+addresh+'\''+
+                // ",mobilenumber='"+mobilenumber+'\''+
                 ", deparment='" + deparment + '\'' +
                 ", salary=" + salary +
                 '}';
