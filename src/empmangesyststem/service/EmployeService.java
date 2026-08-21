@@ -3,9 +3,7 @@ package empmangesyststem.service;
 import empmangesyststem.EmpData.EmployeData;
 import empmangesyststem.EmployeeNotFoundException;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EmployeService {
@@ -101,6 +99,94 @@ public class EmployeService {
                 .collect(Collectors.toList());
     }
 
+    // 9. Find Employees Above Salary
+    public List<EmployeData> findEmployeesAboveSalary(double salary) {
+
+        return emp.stream()
+                .filter(e -> e.getSalary() > salary)
+                .collect(Collectors.toList());
+    }
+
+
+    // 10. Sort Employees By Salary
+    public List<EmployeData> sortBySalary() {
+
+        return emp.stream()
+                .sorted(
+                        Comparator.comparingDouble(EmployeData::getSalary)
+                                .reversed()
+                )
+                .collect(Collectors.toList());
+    }
+
+
+    // 11. Sort Employees By Name
+    public List<EmployeData> sortByName() {
+
+        return emp.stream()
+                .sorted(
+                        Comparator.comparing(EmployeData::getName)
+                )
+                .collect(Collectors.toList());
+    }
+
+    // 12. Find Duplicate Names
+    public Set<String> findDuplicateNames() {
+
+        Set<String> uniqueNames = new HashSet<>();
+        Set<String> duplicateNames = new HashSet<>();
+
+        for (EmployeData employee : emp) {
+
+            String name = employee.getName();
+
+            if (!uniqueNames.add(name)) {
+                duplicateNames.add(name);
+            }
+        }
+
+        return duplicateNames;
+    }
+
+
+    // 13. Count Employees By Department
+    public Map<String, Long> countByDepartment() {
+
+        return emp.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                EmployeData::getDeparment,
+                                Collectors.counting()
+                        )
+                );
+    }
+
+    // 14. Average Salary
+    public double averageSalary() {
+
+        return emp.stream()
+                .mapToDouble(EmployeData::getSalary)
+                .average()
+                .orElse(0.0);
+    }
+
+
+    // 15. Highest Salary By Department
+    public Map<String, Optional<EmployeData>> highestSalaryByDepartment() {
+
+        return emp.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                EmployeData::getDeparment,
+                                Collectors.maxBy(
+                                        Comparator.comparingDouble(
+                                                EmployeData::getSalary
+                                        )
+                                )
+                        )
+                );
+
+    }
 
 
 
