@@ -1,6 +1,6 @@
 package multithreadingExample;
 
-public class Word implements Runnable{
+public class Word extends Thread{
 
     @Override
     public void run() {
