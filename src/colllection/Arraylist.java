@@ -17,7 +17,7 @@ public class Arraylist {
 //        list.add(23);
         ArrayList<String> list=new ArrayList<String>();//Creating arraylist
         list.add("Mango");//Adding object in arraylist
-        list.add("Apple");
+        list.add("lichi");
         list.add("Apple");
         list.add("Banana");
         list.add("Grapes");

@@ -8,6 +8,5 @@ public class Ty {
         String name="divyanshu";
         String reverse = new StringBuilder(name).reverse().toString();
         System.out.println(reverse);
-
     }
 }
