@@ -9,6 +9,8 @@ public class MapExample {
         Map<String, Integer> map = new HashMap<>();
         map.put("A", 1);
         map.put("B", 2);
+        map.put("C", 3);
+        map.put("Divyanshu",27);
         System.out.println(map);
 
     }

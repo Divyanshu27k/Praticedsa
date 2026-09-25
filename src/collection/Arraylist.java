@@ -12,5 +12,4 @@ public class Arraylist {
         //System.out.println(list);
         System.out.println(list.get(1));
     }
-
 }
