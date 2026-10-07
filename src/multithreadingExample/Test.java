@@ -5,11 +5,15 @@ public class Test {
         Counter counter=new Counter();
         MyThreadSynch t1=new MyThreadSynch(counter);
         MyThreadSynch t2=new MyThreadSynch(counter);
+        MyThreadSynch t3=new MyThreadSynch(counter);
         t1.start();
         t2.start();
+        t3.start();
         try{
             t1.join();
             t2.join();
+            t3.join();
+
         }catch (Exception e){
 
         }
