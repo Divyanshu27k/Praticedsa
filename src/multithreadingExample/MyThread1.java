@@ -11,9 +11,7 @@ public class MyThread1 extends Thread{
           //  }
             //System.out.println(i);
         }
-
     }
-
     public static void main(String[] args) throws InterruptedException {
         MyThread1 t1=new MyThread1();
         t1.start();
